@@ -1,5 +1,5 @@
-# IoT -- Introduction to Python for Numerical Methods
-## Instructor: Kazi Asrafuzzaman (kazi.ashrafuzzaman@gmail.com) and Rokan Faruqui (rufaruqui@cu.ac.bd)
+# Introduction to Python for Numerical Methods
+### Instructor: Kazi Asrafuzzaman (kazi.ashrafuzzaman@gmail.com) and Rokan Faruqui (rufaruqui@cu.ac.bd)
 
 ### day 1:  how to use and organize variables
  - operations, data types, statements
