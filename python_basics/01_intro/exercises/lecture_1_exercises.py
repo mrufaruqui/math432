@@ -7,9 +7,7 @@ def is_palindrome(string_var):
     fname = inspect.stack()[0][3]
     ret = None
     ########################
-    ret = True
-    for i,j in zip(string_var,reversed(string_var)):
-        ret = i == j
+    ### Your Code Here   ###
     ########################
     assert ret is not None, fname+' is not defined'
     assert type(ret) is type(True), fname+' should return a bool'
@@ -25,13 +23,7 @@ def histogram_letters(string_var):
     fname = inspect.stack()[0][3]
     ret = None
     ########################
-    ret = {}; 
-    for s in string_var:
-        count = 0;
-        for i in range(len(string_var)):
-            if s == string_var[i]:
-                count+=1;
-        ret[s]=count;
+    ### Your Code Here   ###
     ########################
     assert ret is not None, fname+' is not defined'
     assert type(ret) is type({}), fname+' should return a dict'
@@ -47,13 +39,7 @@ def get_most_frequent(list_var):
     fname = inspect.stack()[0][3]
     ret = None
     ######################## 
-    dict = {}
-    for i in list_var:
-        dict[i] = list_var.count(i)  
-    most_frequent = max(dict.values())
-    for key, value in dict.items():
-        if value ==  most_frequent:
-            ret = (key, most_frequent)
+     ### Your Code Here   ###
     ########################
     assert ret is not None, fname+' is not defined'
     assert type(ret) is type(()), fname+' should return a tuple'
@@ -68,10 +54,7 @@ def which_duplicates(list_var):
     fname = inspect.stack()[0][3]
     ret = None
     ########################
-    ret = {str(x):list_var.count(x) for x in list_var if list_var.count(x) > 1}
-    # for item in list_var:
-    #     if list_var.count(item) > 1 :
-    #         ret[str(item)]=list_var.count(item); 
+    ### Your Code Here   ### 
     ########################
     assert ret is not None, fname+' is not defined'
     assert type(ret) is type({}), fname+' should return a dict'
@@ -87,9 +70,7 @@ def compute_factorial(int_val):
     fname = inspect.stack()[0][3]
     ret = None
     ########################
-    ret = 1
-    for  i in range(int_val):
-       ret = (i + 1) * ret
+     ### Your Code Here   ###
     ########################
     assert ret is not None, fname+' is not defined'
     assert type(ret) is type(1), fname+' should return an integer'
@@ -108,16 +89,7 @@ def is_prime(int_val):
     fname = inspect.stack()[0][3]
     ret = None
     ########################
-    ret = True;
-    if int_val in (2,3):
-        ret = True;
-    elif int_val in (0,1):
-        ret = False   
-    else:
-        for i in range(2,int_val): 
-            if int_val % i == 0: 
-                ret = False
-                break
+     ### Your Code Here   ###
     ########################
     assert ret is not None, fname+' is not defined'
     assert type(ret) is type(False), fname+' should return a bool'
@@ -140,10 +112,7 @@ def is_divisor(int_val,div):
     fname = inspect.stack()[0][3]
     ret = None
     ########################
-    if int_val % div == 0:
-        ret = True
-    else:
-        ret = False
+     ### Your Code Here   ###
     ########################
     assert ret is not None, fname+' is not defined'
     assert type(ret) is type(False), fname+' should return a bool'
@@ -160,11 +129,7 @@ def which_divisors(int_val):
     fname = inspect.stack()[0][3]
     ret = None
     ########################
-    ret = []
-    for i in range(2,int_val):
-        if int_val % i == 0:
-            ret.insert(-1,i)
-    ret = sorted(ret)        
+     ### Your Code Here   ###    
     ########################
     #print(sorted(ret))
     assert ret is not None, fname+' is not defined'
@@ -182,10 +147,7 @@ def which_prime_divisors(int_val):
     fname = inspect.stack()[0][3]
     ret = None
     ########################
-    ret = []
-    for i in range(2,int_val):
-        if is_prime(i) and int_val % i == 0:
-            ret.append(i) 
+    ### Your Code Here   ###
     ########################
     assert ret is not None, fname+' is not defined'
     assert type(ret) is type([]), fname+' should return a list'
